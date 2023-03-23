@@ -1,0 +1,23 @@
+﻿<Window x:Class="App_Estudiantes_CRUD_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:App_Estudiantes_CRUD_WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid Height="NaN" Margin="10,10,10,10" Width="NaN">
+            <TextBox x:Name="TxtBxNombre" HorizontalAlignment="Left" Margin="118,55,0,0" TextWrapping="Wrap" Text="&#xD;&#xA;" VerticalAlignment="Top" Width="120" Height="22"/>
+            <Label Content="Nombre:" HorizontalAlignment="Left" Margin="57,53,0,0" VerticalAlignment="Top"/>
+            <Label Content="Edad:" HorizontalAlignment="Left" Margin="267,53,0,0" VerticalAlignment="Top"/>
+            <Label Content="Email:" HorizontalAlignment="Left" Margin="418,53,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="TxtBxEdad" HorizontalAlignment="Left" Margin="311,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" Height="22"/>
+            <TextBox x:Name="TxtBxEmail" HorizontalAlignment="Left" Margin="473,55,0,0" TextWrapping="Wrap" Text="&#xD;&#xA;" VerticalAlignment="Top" Width="120" Height="22"/>
+            <Button x:Name="BtnSave" Content="Guardar" HorizontalAlignment="Left" Margin="638,49,0,0" VerticalAlignment="Top" Height="33" Width="96" Click="BtnSave_Click" />
+            <DataGrid x:Name="dgEstudiantes" d:ItemsSource="{d:SampleData ItemCount=5}" Height="NaN" Margin="57,130,46,101" Width="NaN" SelectionChanged="dgEstudiantes_SelectionChanged" SelectionMode="Single"/>
+            <Button x:Name="BtnDelete" Content="Eliminar" HorizontalAlignment="Left" Margin="85,355,0,0" VerticalAlignment="Top" Height="33" Width="96" Click="BtnDelete_Click"/>
+        </Grid>
+
+    </Grid>
+</Window>
